@@ -1,0 +1,2 @@
+# FKINGTERM
+Trash discord bot :)
