@@ -46,10 +46,10 @@ async fn cmd(con: String) -> String {
         if s.len() <= 1 {
             return String::from("Done!");
         }
-        return format!("```\n\t\tstdout\n{}\n```", s.to_string());
+        return format!("```\nstdout\n{}\n```", s.to_string());
     } else {
         let s = String::from_utf8_lossy(&out.stderr);
-        return format!("```\n\t\tstderr\n{}\n```", s.to_string());
+        return format!("```\nstderr\n{}\n```", s.to_string());
     }
 }
 
